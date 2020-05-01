@@ -28,7 +28,7 @@ def find_the_cheese(snack)
     if snack.index("#{cheese}") != nil
       return cheese
     else
-      nil
+      return nil
     end
   end
 end
