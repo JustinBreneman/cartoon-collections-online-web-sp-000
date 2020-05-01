@@ -25,8 +25,8 @@ end
 def find_the_cheese(snack)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_types.all? do |cheese|
-    if snack["#{cheese}"] != nil
-      true
+    if snack.index?("#{cheese}") != nil
+      return cheese
     else
       nil
     end
